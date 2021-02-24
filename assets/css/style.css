@@ -93,27 +93,25 @@ td {
   grid-template-columns: 1fr 3fr;
   height: 15rem;
 }
-#profile_round_circle {
-  /* background: yellow; */
-}
 
 #profile_round_circle > img {
   width: 200px;
   border-radius: 50%;
-  margin: 1rem 0 0 0;
+  padding: 20px 0;
 }
 #welomce_content {
-  /* background: wheat; */
   display: flex;
   flex-direction: column-reverse;
   align-items: end;
-  padding: 30px;
+  padding: 30px 0 68px;
+  color: #b4babf;
 }
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #header {
     display: grid;
-    grid-template-columns: 1fr;
-    height: auto;
+    grid-template-columns: 1fr !important;
+    height: auto !important;
   }
 }
