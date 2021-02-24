@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saisuresh Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        height: 15rem;
+      }
+      #profile_round_circle {
+        background: yellow;
+      }
+
+      #profile_round_circle > img {
+        width: 200px;
+        border-radius: 50%;
+        margin: 1rem 0 0 0;
+      }
+      #welomce_content {
+        background: wheat;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: end;
+        padding: 30px;
+      }
+    </style>
+    <script>
+      var i = 0;
+      var txt = "SAISURESH ARUMUGAM :)";
+      var speed = 50;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+  </head>
+  <body class="container" id="grad" onload="typeWriter()">
+    <div class="card">
+      <section id="header" class="card-img-top">
+        <div id="profile_round_circle">
+          <img
+            src="https://st3.depositphotos.com/13159112/17145/v/600/depositphotos_171453724-stock-illustration-default-avatar-profile-icon-grey.jpg"
+            alt="Avatar"
+            style="width: 200px"
+          />
+        </div>
+        <div id="welomce_content">
+          <h2 id="demo"></h2>
+          <hr />
+        </div>
+      </section>
+
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
